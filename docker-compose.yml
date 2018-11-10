@@ -12,7 +12,7 @@ volumes:
     driver: ${VOLUMES_DRIVER}
 
    services:
-### MongoDB ##############################################
+
     mongo:
       build: ./mongo
       ports:
@@ -23,7 +23,6 @@ volumes:
         - backend
 
 
-### MongoWebUI ################################################
     mongo-webui:
       build:
         context: ./mongo-webui
