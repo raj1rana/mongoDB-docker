@@ -5,7 +5,7 @@
 <br/><br/><br/>
 <p align="left">
  Hi<br/>
- you will get jenkins Docker in this repo.</p>
+ you will get mongoDB Docker in this repo.</p>
 
 
 
@@ -18,7 +18,7 @@ Let us directly move to the installation part.
 choose a suitable directory to work on
 ```sh
 $ mkdir rajdock
-$ git clone https://github.com/raj1rana/jenkins-docker.git
+$ git clone https://github.com/raj1rana/mongoDB-docker.git
 ```
 ### Download Docker
 go to www.docker.com and download the suitable version according to your operating system
