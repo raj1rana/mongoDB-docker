@@ -11,21 +11,21 @@ volumes:
   mongo:
     driver: ${VOLUMES_DRIVER}
 
-   services:
+services:
 
-    mongo:
-      build: ./mongo
+  mongo:
+    build: ./mongo
       ports:
-        - "${MONGODB_PORT}:27017"
+        - "27017:27017"
       volumes:
         - ${DATA_PATH_HOST}/mongo:/data/db
       networks:
         - backend
 
 
-    mongo-webui:
-      build:
-        context: ./mongo-webui
+  mongo-webui:
+    build:
+      context: ./mongo-webui
       restart: always
       environment:
         - ROOT_URL=${MONGO_WEBUI_ROOT_URL}
